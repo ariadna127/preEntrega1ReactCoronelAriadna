@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "MUSCULOSA GRIS",
+        "description": "3 cuotas SIN interés con tarjeta de débito",
+        "img": "https://images.unsplash.com/photo-1593419528756-3cdfa1615b86?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "price": 8.699,
+        "stock": 10,
+        "category": "remeras"
+    },
+    {
+        "id": 2,
+        "name": "REMERA CORAL",
+        "description": "3 cuotas SIN interés con tarjeta de débito",
+        "img": "https://img.freepik.com/foto-gratis/linda-atractiva-mujer-vestida-ropa-deportiva_144627-12269.jpg?w=360&t=st=1701871070~exp=1701871670~hmac=b2585bd61bae52a37412cad0ffba16babcba2999cf15344f97ed4c613f7be78f",
+        "price": 9.899,
+        "stock": 10,
+        "category": "remeras"
+    },
+    {
+        "id": 3,
+        "name": "MUSCULOSA PINK",
+        "description": "3 cuotas SIN interés con tarjeta de débito",
+        "img": "https://img.freepik.com/foto-gratis/hermosa-joven-deportiva-haciendo-ejercicio-gimnasio_1301-6622.jpg?w=360&t=st=1701871053~exp=1701871653~hmac=f3fcdf9aa82cf35bd0148f8ed418335f64f9b626f6e8682dfef42c24c876b03e",
+        "price": 7.999,
+        "stock": 10,
+        "category": "remeras"
+    },
+    {
+        "id": 4,
+        "name": "TOP AZUL",
+        "description": "3 cuotas SIN interés con tarjeta de débito",
+        "img": "https://img.freepik.com/foto-gratis/retrato-mujer-joven-forma-entrenando-culturismo_23-2149552424.jpg?w=740&t=st=1701871821~exp=1701872421~hmac=9ffabf121f9f4568176aa8e696eb5fc08af3eae8b1294a375b1d5cc59603e38c",
+        "price": 10.799,
+        "stock": 10,
+        "category": "tops"
+    },
+    {
+        "id": 5,
+        "name": "TOP BLANCO",
+        "description": "3 cuotas SIN interés con tarjeta de débito",
+        "img": "https://img.freepik.com/fotos-premium/hermosa-mujer-adulta-trabajando-sobre-fondo-claro_470178-19616.jpg?w=740",
+        "price": 9.888,
+        "stock": 10,
+        "category": "tops"
+    },
+    {
+        "id": 6,
+        "name": "TOP ROJO",
+        "description": "3 cuotas SIN interés con tarjeta de débito",
+        "img": "https://img.freepik.com/foto-gratis/colocar-joven-ropa-deportiva-posando_23-2148759023.jpg?w=360&t=st=1701871863~exp=1701872463~hmac=da6b87ef3805a615e4ae9d333f575bfc7e5a920bdb2ff2b8ba4861e62a1342fe",
+        "price": 9.999,
+        "stock": 10,
+        "category": "tops"
+    },
+    {
+        "id": 7,
+        "name": "CALZA AZUL",
+        "description": "3 cuotas SIN interés con tarjeta de débito",
+        "img": "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "price": 18.888,
+        "stock": 10,
+        "category": "calzas"
+    },
+    {
+        "id": 8,
+        "name": "CALZA CORTA BLANCA",
+        "description": "3 cuotas SIN interés con tarjeta de débito",
+        "img": "https://images.unsplash.com/photo-1635929171657-ccb333d714f5?q=80&w=1559&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "price": 15.689,
+        "stock": 10,
+        "category": "calzas"
+    },
+    {
+        "id": 9,
+        "name": "CALZA GRIS",
+        "description": "3 cuotas SIN interés con tarjeta de débito",
+        "img": "https://img.freepik.com/foto-gratis/belleza-estricta-salon-encanto-muchacha_1303-417.jpg?w=360&t=st=1701872226~exp=1701872826~hmac=7fbdf311ea4c3930b88606ce8f79b23e5923deedba90d6ea88d4a01bdda99196",
+        "price": 17.977,
+        "stock": 10,
+        "category": "calzas"
+    }
+]

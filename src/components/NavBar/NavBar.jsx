@@ -2,18 +2,21 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
+import './navBar.css';
 
 function NavBar() {
     return (
         <>
             <Navbar bg="danger" data-bs-theme="dark">
                 <Container className='d-flex'>
-                    <Navbar.Brand className='mr-auto p-2' href="#home">Sports<span className='text-dark fw-medium'>wear</span></Navbar.Brand>
-                    <Nav className="p-2">
-                        <Nav.Link href="Inicio" className='text-white'>Inicio</Nav.Link>
-                        <Nav.Link href="#Productos" className='text-white'>Productos</Nav.Link>
-                        <Nav.Link href="#Contacto" className='text-white'>Contacto</Nav.Link>
-                        <Nav.Link href="#Carrito" className='text-white'> <CartWidget/> </Nav.Link>
+                    <Link className='mr-auto p-2 sports' to="/">Sports<span className='text-dark fw-medium'>wear</span></Link>
+                    <Nav className="p-2 gap-4">
+                        <Link to="/">Home</Link>
+                        <Link to="/category/remeras">Remeras</Link>
+                        <Link to="/category/tops">Tops</Link>
+                        <Link to="/category/calzas">Calzas</Link>
+                        <Link to="/cart"> <CartWidget/> </Link>
                     </Nav>
                 </Container>
             </Navbar>
