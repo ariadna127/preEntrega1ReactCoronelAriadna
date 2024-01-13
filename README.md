@@ -20,7 +20,7 @@ Bienvenidos al repositorio de mi proyecto SportWear. Este proyecto de ecommerce 
 
 Sigue estos pasos para configurar y ejecutar la aplicación de Sportwear en tu entorno local:
 ### 1. Clona el repositorio
-git clone
+git clone https://github.com/ariadna127/proyectoFinalReactCoronelAriadna
 
 ***
 
