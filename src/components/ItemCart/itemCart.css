@@ -1,0 +1,33 @@
+.container-cart{
+    display: flex;
+    gap: 3.125rem;
+    background-color: #f7e7ea;
+    margin: 3.125rem 3.125rem -1.25rem 3.125rem;
+
+    border-radius: 1.25rem;
+    padding: 20px;
+}
+
+.container-cart img{
+    width: 9.375rem;
+    height: 12.5rem;
+    object-fit: cover;
+
+}
+
+.container-cart div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-cart div button{
+    border: none;
+    font-size: 1.875rem;
+    transition: all 0.3s;
+}
+.container-cart div button:hover{
+    color: #e64a64;
+}

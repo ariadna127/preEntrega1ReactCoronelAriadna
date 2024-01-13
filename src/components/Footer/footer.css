@@ -1,0 +1,19 @@
+footer{
+    background-color: rgb(233, 224, 224);
+    height: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+footer p{
+    font-size: 1.0625rem;
+}
+
+footer div i:hover{
+    filter: invert(48%) sepia(44%) saturate(4935%) hue-rotate(323deg) brightness(93%) contrast(92%);
+    cursor: pointer;
+}
+
+

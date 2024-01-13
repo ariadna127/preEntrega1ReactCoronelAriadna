@@ -1,0 +1,45 @@
+.cart-vacio{
+    min-height: 100vh;
+}
+
+.linkkk{
+    color: black;
+}
+
+.extras{
+    display: flex;
+    margin: 3.125rem;
+    justify-content: space-between;
+}
+
+.extras button{
+    border: none;
+    background-color:  #f7e7ea;
+    width: 200px;
+    border-radius: .625rem;
+    height: 3.125rem;
+}
+.extras div{
+    display: flex;
+}
+.extras div p{
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .9375rem;
+    background-color: #f7e7ea;
+    border-radius: 15px 0 0 15px;
+}
+
+.extras div p span{
+    font-weight: bold;
+}
+
+.extras div a button{
+    background-color: #e64a64;
+    border-radius: 0 15px 15px 0;
+}
+.cartt{
+    min-height: 100vh;
+}

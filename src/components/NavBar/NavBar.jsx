@@ -8,10 +8,10 @@ import './navBar.css';
 function NavBar() {
     return (
         <>
-            <Navbar bg="danger" data-bs-theme="dark">
+            <Navbar className='navBar' data-bs-theme="dark">
                 <Container className='d-flex'>
                     <Link className='mr-auto p-2 sports' to="/">Sports<span className='text-dark fw-medium'>wear</span></Link>
-                    <Nav className="p-2 gap-4">
+                    <Nav  className="p-2 gap-4 Navv">
                         <Link to="/">Home</Link>
                         <Link to="/category/remeras">Remeras</Link>
                         <Link to="/category/tops">Tops</Link>

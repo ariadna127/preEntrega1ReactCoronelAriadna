@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import productos from "../Json/productos.json";
 import ItemList from "../ItemList/ItemList";
+import {getFirestore, collection, getDocs, where, query} from 'firebase/firestore'
+import './itemListContainer.css'
 
 
 const ItemListContainer = ({ greeting }) => {
@@ -9,19 +10,22 @@ const ItemListContainer = ({ greeting }) => {
     const { id } = useParams();
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const data = await new Promise((resolve) => {
-                    setTimeout(() => {
-                        resolve(id ? productos.filter((producto) => producto.category === id) : productos)
-                    }, 1500);
-                });
-                setItems(data)
-            } catch (error) {
-                console.log("Error", error);
-            }
+        const queryDb = getFirestore();
+        const queryCollection = collection(queryDb, 'products');
+
+        if (id) {
+            const queryFilter = query(queryCollection, where('category', '==', id));
+            getDocs(queryFilter).then((res)=>{
+                console.log(res.docs);  
+                setItems(res.docs.map((p) => ({ id: p.id, ...p.data() })));
+            });
+            
+        } else{
+            getDocs(queryCollection).then((res)=>
+            setItems(res.docs.map((p)=>({id: p.id, ...p.data()})))
+            );
         }
-        fetchData()
+        
     }, [id])
 
 
@@ -32,11 +36,10 @@ const ItemListContainer = ({ greeting }) => {
                     <div className="contenedor-title">
                         <h2 className="title">{greeting}</h2>
                     </div>
-                    <h3 className="text-center m-4">TODOS LOS PRODUCTOS</h3>
                 </div>
 
             ) : (items && items.length > 0 && (
-                <h3 className="text-center m-4 text-uppercase">{items[0].category}</h3>
+                <h3 className="text-center m-4 title-categ">{items[0].category}</h3>
             )) }
             <div className="container">
                 <div>

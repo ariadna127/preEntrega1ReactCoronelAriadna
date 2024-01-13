@@ -1,0 +1,6 @@
+.title-categ::first-letter{
+    text-transform: uppercase;
+}
+.title-categ{
+    font-size: 2.5rem;
+}

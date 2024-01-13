@@ -1,7 +1,19 @@
 a{
     text-decoration: none;
     color: white;
+    font-weight: 500;
+    transition: all 0.4s;
 }
 .sports{
     font-size: 1.5625rem;
+}
+.navBar{
+    background-color: #e64a64;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    height: 5.625rem;
+}
+.Navv a:hover{
+    color: black;
 }

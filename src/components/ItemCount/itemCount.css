@@ -1,0 +1,47 @@
+.counter-item{
+    display: flex;
+    gap: 1.875rem;
+    font-weight: 600;
+    font-size: 1.5625rem;
+    
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+    color: #e64a64 ;
+}
+.counter button{
+    border: none;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 3.125rem;
+    height: 3.125rem;
+    background-color: white;
+    color: #e64a64 ;
+}
+.counter button:hover{
+    background-color: #f8d4da;
+    border-radius: 10%;
+}
+.counter span{
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.añadir-cart button{
+    height: 3.125rem;
+    border-radius: .9375rem;
+    border: none;
+    width: 18.75rem;
+    color: rgb(48, 47, 47);
+}
+
+.añadir-cart button:hover{
+    background-color: #f8d4da;
+    color: #e64a64;
+}

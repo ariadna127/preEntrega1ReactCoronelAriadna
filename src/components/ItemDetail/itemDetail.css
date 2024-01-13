@@ -1,4 +1,28 @@
-.imagen-detail{
-    width: 25rem;
-    object-fit: contain;
-} 
+.link{
+    color: black;
+}
+.imagen-detail {
+    width: 24.375rem;
+    height: 31.25rem;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 3px 3px 10px #8d8d8d;
+}
+
+strong{
+    font-size: 1.5625rem;
+}
+
+.p-detail{
+    color: rgb(109, 108, 108);
+}
+.p-detail span{
+    color: black;
+}
+
+.div-detail a{
+    color: rgb(48, 47, 47);
+}
+.div-detail a:hover{
+    color: rgb(231, 75, 101);
+}
