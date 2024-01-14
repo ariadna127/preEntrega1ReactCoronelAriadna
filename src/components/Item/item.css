@@ -1,5 +1,5 @@
 .item {
-    width: 24.375rem;
+    width: 21.875rem;
     color: black;
     transition: all 0.3s;
     border-radius: 5%;
@@ -11,8 +11,8 @@
 }
 
 .imagen-item {
-    width: 24.375rem;
-    height: 31.25rem;
+    width: 21.875rem;
+    height: 30rem;
     object-fit: cover;
     border-top-right-radius: 5%;
     border-top-left-radius: 5%;
