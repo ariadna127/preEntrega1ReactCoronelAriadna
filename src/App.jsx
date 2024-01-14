@@ -8,7 +8,7 @@ import Error from './components/Error'
 import CartProvider from './components/Context/CartContext'
 import Cart from './components/Cart/Cart'
 import CheckOut from './components/CheckOut/CheckOut'
-import Footer from './components/Footer/footer'
+import Footer from './components/Footer/Footer'
 
 
 function App() {
