@@ -20,6 +20,7 @@
     height: 3.125rem;
     background-color: white;
     color: #e64a64 ;
+    transition: all 0.3s;
 }
 .counter button:hover{
     background-color: #f8d4da;
@@ -39,6 +40,7 @@
     border: none;
     width: 18.75rem;
     color: rgb(48, 47, 47);
+    transition: all 0.3s;
 }
 
 .añadir-cart button:hover{

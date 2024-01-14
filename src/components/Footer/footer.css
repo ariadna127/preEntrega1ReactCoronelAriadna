@@ -6,11 +6,16 @@ footer{
     align-items: center;
     padding-right: 2.5rem;
     padding-left: 2.5rem;
+    transition: all 0.5s;
 }
 footer p{
     font-size: 1.0625rem;
 }
 
+
+footer div i{
+    transition: all 0.3s;
+}
 footer div i:hover{
     filter: invert(48%) sepia(44%) saturate(4935%) hue-rotate(323deg) brightness(93%) contrast(92%);
     cursor: pointer;

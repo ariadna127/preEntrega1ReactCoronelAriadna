@@ -22,6 +22,7 @@ strong{
 
 .div-detail a{
     color: rgb(48, 47, 47);
+    transition: all 0.3s;
 }
 .div-detail a:hover{
     color: rgb(231, 75, 101);
