@@ -1,6 +1,6 @@
 import React from 'react';
 import Item from '../Item/Item';
-import './ItemList.css'
+import './itemList.css'
 const ItemList = ({items}) => {
     return (
         <div className='contenedor-items'>
