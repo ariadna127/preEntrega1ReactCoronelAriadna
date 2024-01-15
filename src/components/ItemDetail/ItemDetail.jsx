@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
-import './itemDetail.css'
 import { useCartContext } from '../Context/CartContext';
 import { Link } from 'react-router-dom';
 import ItemCount from '../ItemCount/ItemCount';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './itemDetail.css';
+
 const ItemDetail = ({ item }) => {
 
     const [goToCart, setGoToCart] = useState(false);
@@ -10,6 +13,12 @@ const ItemDetail = ({ item }) => {
     const onAdd = (quantity) => {
         setGoToCart(true);
         addProduct(item, quantity);
+        toast.success('¡Producto agregado exitosamente!',{
+            hideProgressBar: true,
+            className: 'my-custom-toast',
+            position: 'bottom-right',
+            autoClose: 3000
+        });
     }
 
 
@@ -28,7 +37,9 @@ const ItemDetail = ({ item }) => {
                     <p className='p-detail'>Categoria: <span> {item.category} </span></p>
                     <div className='mt-5 div-detail'>
                         {goToCart ? <Link to='/cart' className='link'>Ir al carrito</Link> : <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />}
+
                     </div>
+                    <ToastContainer/>
                     
                 </div>
 

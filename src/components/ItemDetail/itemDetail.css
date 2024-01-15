@@ -27,3 +27,9 @@ strong{
 .div-detail a:hover{
     color: rgb(231, 75, 101);
 }
+.my-custom-toast{
+    background-color: #f8d4da;
+    color: rgb(231, 75, 101);
+    bottom: 3.125rem;
+    text-align: center;
+}
