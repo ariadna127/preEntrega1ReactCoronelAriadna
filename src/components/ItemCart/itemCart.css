@@ -32,6 +32,7 @@
     color: #e64a64;
 }
 
-.title.itemCart{
+.title-itemCart{
     text-align: center;
+    font-size: 1.25rem;
 }
