@@ -23,6 +23,7 @@
     justify-content: center;
 }
 
+
 .container-cart div button{
     border: none;
     font-size: 1.875rem;
@@ -35,4 +36,24 @@
 .title-itemCart{
     text-align: center;
     font-size: 1.25rem;
+}
+
+.container-cart div .div-quantity {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.div-quantity button{
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 0;
+}
+
+.div-quantity p{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+    text-align: center;
 }

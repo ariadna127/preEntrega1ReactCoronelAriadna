@@ -5,11 +5,11 @@ import './itemCart.css'
 const ItemCart = ({ product }) => {
     const { removeProduct, updateQuantity } = useCartContext();
 
-    const decrease = () =>{
+    const decrease = () => {
         updateQuantity(product.id, product.quantity - 1)
     };
 
-    const increase = () =>{
+    const increase = () => {
         updateQuantity(product.id, product.quantity + 1)
     };
 
@@ -24,9 +24,11 @@ const ItemCart = ({ product }) => {
                 </div>
                 <div>
                     <p>Cantidad:</p>
-                    <button disabled={product.quantity <=1} onClick={decrease} >-</button>
-                    <p>{product.quantity}</p>
-                    <button disabled={product.quantity >= product.stock} onClick={increase}>+</button>
+                    <div className='div-quantity'>
+                        <button disabled={product.quantity <= 1} onClick={decrease} >-</button>
+                        <p>{product.quantity}</p>
+                        <button disabled={product.quantity >= product.stock} onClick={increase}>+</button>
+                    </div>
                 </div>
                 <div>
                     <p>Precio:</p>
