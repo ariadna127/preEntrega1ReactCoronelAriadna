@@ -11,7 +11,7 @@ const ItemCart = ({ product }) => {
                 <img src={product.img} alt={product.name} />
                 <div>
                     <p>Producto:</p>
-                    <h4>{product.title}</h4>
+                    <h4 className='title-itemCart'>{product.title}</h4>
                 </div>
                 <div>
                     <p>Cantidad:</p>

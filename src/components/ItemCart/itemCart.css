@@ -31,3 +31,7 @@
 .container-cart div button:hover{
     color: #e64a64;
 }
+
+.title.itemCart{
+    text-align: center;
+}
