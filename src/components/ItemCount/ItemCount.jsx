@@ -12,7 +12,6 @@ const ItemCount = ({ initial, stock, onAdd }) => {
 
     useEffect(() => {
         setCount(parseInt(initial));
-
     }, [initial])
 
 

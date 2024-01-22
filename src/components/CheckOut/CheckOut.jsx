@@ -99,7 +99,6 @@ const CheckOut = () => {
             email: '',
             emailConfirmacion: ''
         });
-        setMensaje('');
     };
     return (
         <div className='checkout'>
