@@ -14,6 +14,8 @@ const ItemCount = ({ initial, stock, onAdd }) => {
         setCount(parseInt(initial));
 
     }, [initial])
+
+
     return (
         <div className='counter-item'>
             <div className='counter'>
@@ -31,3 +33,4 @@ const ItemCount = ({ initial, stock, onAdd }) => {
 }
 
 export default ItemCount
+

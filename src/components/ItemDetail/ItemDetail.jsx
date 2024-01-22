@@ -35,6 +35,7 @@ const ItemDetail = ({ item }) => {
                     <p>{item.description}</p>
                     <p  className='p-detail'> Stock: <span>{item.stock}</span> </p>
                     <p className='p-detail'>Categoria: <span> {item.category} </span></p>
+                    {item.stock <= 0 && <p className='sin-stock'>Sin stock disponible</p>}
                     <div className='mt-5 div-detail'>
                         {goToCart ? <Link to='/cart' className='link'>Ir al carrito</Link> : <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />}
 
