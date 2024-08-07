@@ -10,7 +10,7 @@ function NavBar() {
         <>
             <Navbar className='navBar' data-bs-theme="dark">
                 <Container className='d-flex'>
-                    <Link className='mr-auto p-2 sports' to="/">Sports<span className='text-dark fw-medium'>wear</span></Link>
+                    <Link translate='no' className='mr-auto p-2 sports' to="/">Sports<span className='text-dark fw-medium'>wear</span></Link>
                     <Nav  className="p-2 gap-4 Navv">
                         <Link to="/">Home</Link>
                         <Link to="/category/remeras">Remeras</Link>
