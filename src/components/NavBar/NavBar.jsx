@@ -19,9 +19,9 @@ function NavBar() {
                     <Link translate='no' className='sports' to="/">Sports<span className='text-dark fw-medium'>wear</span></Link>
                     <Nav  className="Navv">
                         <div className={`links-categoria ${clicked ? 'active' : ''}`}>
-                            <Link onClick={handleClick} to="/">Home</Link>
+                            <Link translate='no' onClick={handleClick} to="/">Home</Link>
                             <Link onClick={handleClick} to="/category/remeras">Remeras</Link>
-                            <Link onClick={handleClick} to="/category/tops">Tops</Link>
+                            <Link translate='no' onClick={handleClick} to="/category/tops">Tops</Link>
                             <Link onClick={handleClick} to="/category/calzas">Calzas</Link> 
                         </div>                      
                         <div className='cart-menu'>

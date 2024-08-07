@@ -33,7 +33,7 @@ const ItemDetail = ({ item }) => {
                     <h3>{item.title}</h3>
                     <p className='text-secondary' ><strong>$ {item.price}</strong></p>
                     <p>{item.description}</p>
-                    <p  className='p-detail'> Stock: <span>{item.stock}</span> </p>
+                    <p translate='no' className='p-detail'> Stock: <span>{item.stock}</span> </p>
                     <p className='p-detail'>Categoria: <span> {item.category} </span></p>
                     {item.stock <= 0 && <p className='sin-stock'>Sin stock disponible</p>}
                     <div className='mt-5 div-detail'>
