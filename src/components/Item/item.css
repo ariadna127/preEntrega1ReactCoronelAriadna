@@ -3,8 +3,9 @@
     clear: both;
     color: black;
     border-radius: 5%;
-    box-shadow: 3px 3px 10px #8d8d8d;
     overflow: hidden;
+    transition: 0.4s ease;
+    background-color: rgb(247, 241, 241);
 }
 
 
@@ -13,11 +14,13 @@
     object-fit: cover;
     border-top-right-radius: 5%;
     border-top-left-radius: 5%;
-    transition: 0.6s ease;
+
+
+
 }
 
-.imagen-item:hover{
-    transform: scale(1.05);
+.item:hover{
+    box-shadow: 3px 3px 10px #8d8d8d;
 }
 
 
@@ -32,3 +35,9 @@
 }
 
 
+@media (max-width: 823px){
+    .item{
+        background-color: transparent;
+        box-shadow: 3px 3px 10px #8d8d8d;
+    }
+}
