@@ -12,6 +12,12 @@
 
 
 @media (max-width: 600px) {
+    .title{
+        font-size: 2.5rem;
+        padding: 0 1rem;
+    }
+
+
     .title-categ{
         font-size: 1.75rem;
     }
