@@ -30,7 +30,7 @@ const ItemDetail = ({ item }) => {
                     <img className='imagen-detail' src={item.img} alt={item.title} />
                 </div>
                 <div>
-                    <h3>{item.title}</h3>
+                    <h3 translate='no'>{item.title}</h3>
                     <p className='text-secondary' ><strong>$ {item.price}</strong></p>
                     <p>{item.description}</p>
                     <p translate='no' className='p-detail'> Stock: <span>{item.stock}</span> </p>
