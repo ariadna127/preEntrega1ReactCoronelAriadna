@@ -5,7 +5,7 @@ import './item.css'
 const Item = ({item}) => {
     return (
         <Link to={'/item/' + item.id} className='text-decoration-none'>
-            <div className='container mb-5'>
+            <div >
                 <div className='item'>
                     <img className='imagen-item' src={item.img} alt={item.title}/>
                     <div className='div-texto text-center'>

@@ -1,23 +1,25 @@
 .item {
-    width: 21.875rem;
+    float: left;
+    clear: both;
     color: black;
-    transition: all 0.3s;
     border-radius: 5%;
     box-shadow: 3px 3px 10px #8d8d8d;
+    overflow: hidden;
 }
 
-.item:hover {
-    transform: scale(1.05);
-}
 
 .imagen-item {
-    width: 21.875rem;
-    height: 30rem;
+    max-width: 100%;
     object-fit: cover;
     border-top-right-radius: 5%;
     border-top-left-radius: 5%;
-
+    transition: 0.6s ease;
 }
+
+.imagen-item:hover{
+    transform: scale(1.05);
+}
+
 
 .div-texto {
     border-bottom-left-radius: .9375rem;
@@ -28,3 +30,5 @@
 .item-title{
     color: rgba(0, 0, 0, 0.774);
 }
+
+
