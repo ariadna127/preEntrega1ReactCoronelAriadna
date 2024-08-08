@@ -21,6 +21,7 @@
     background-color: white;
     color: #e64a64 ;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .counter button:hover{
     background-color: #f8d4da;

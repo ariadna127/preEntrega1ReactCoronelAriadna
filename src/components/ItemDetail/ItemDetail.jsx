@@ -24,12 +24,12 @@ const ItemDetail = ({ item }) => {
 
 
     return (
-        <div className='row'>
-            <div className='mt-5 mb-5 d-flex gap-5 justify-content-center'>
+        <div>
+            <div className='mt-5 mb-5 d-flex gap-5 justify-content-center contenedor-item-detail'>
                 <div>
                     <img className='imagen-detail' src={item.img} alt={item.title} />
                 </div>
-                <div>
+                <div className='detalles-producto'>
                     <h3 translate='no'>{item.title}</h3>
                     <p className='text-secondary' ><strong>$ {item.price}</strong></p>
                     <p>{item.description}</p>

@@ -39,7 +39,7 @@ const ItemListContainer = ({ greeting }) => {
                 </div>
 
             ) : (items && items.length > 0 && (
-                <h3 className="text-center mt-4 title-categ">{items[0].category}</h3>
+                <h3 translate="no" className="text-center mt-4 title-categ">{items[0].category}</h3>
             )) }
             <div className="contenedor">
                 <div>
