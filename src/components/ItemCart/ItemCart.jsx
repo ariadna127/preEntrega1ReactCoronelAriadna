@@ -15,33 +15,27 @@ const ItemCart = ({ product }) => {
 
 
     return (
-        <div>
-            <div className='container-cart'>
+        <div className='container-cart'>
                 <img src={product.img} alt={product.name} />
-                <div>
-                    <p>Producto:</p>
-                    <h4 className='title-itemCart'>{product.title}</h4>
-                </div>
-                <div>
-                    <p>Cantidad:</p>
-                    <div className='div-quantity'>
-                        <button disabled={product.quantity <= 1} onClick={decrease} >-</button>
-                        <p>{product.quantity}</p>
-                        <button disabled={product.quantity >= product.stock} onClick={increase}>+</button>
+                <div className='detalles-productos-cart'>
+                    <div>
+                        <h4 className='title-itemCart'>{product.title}</h4>
+                        <div className='div-quantity'>
+                            <button disabled={product.quantity <= 1} onClick={decrease} >-</button>
+                            <p>{product.quantity}</p>
+                            <button disabled={product.quantity >= product.stock} onClick={increase}>+</button>
+                        </div>
+                    </div>
+                    <div className='precio-eliminar'>
+                        <button onClick={() => removeProduct(product.id)}><i className="bi bi-trash"></i></button>
+                        <div>
+                        <p>Subtotal</p>
+                        <p>$ {product.quantity * product.price}</p>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <p>Precio:</p>
-                    <p>$ {product.price}</p>
-                </div>
-                <div>
-                    <p>Subtotal</p>
-                    <p>$ {product.quantity * product.price}</p>
-                </div>
-                <div>
-                    <button onClick={() => removeProduct(product.id)}><i className="bi bi-trash"></i></button>
-                </div>
-            </div>
+
+
         </div>
     )
 }

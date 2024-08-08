@@ -1,26 +1,27 @@
 .container-cart{
     display: flex;
+    justify-content: space-around;
     gap: 3.125rem;
     background-color: #f7e7ea;
-    margin: 3.125rem 3.125rem -1.25rem 3.125rem;
-
+    box-sizing: border-box;
+    overflow: hidden;
     border-radius: 1.25rem;
-    padding: 20px;
+    width: 70%;
+    padding: 0 2rem;
+    height: 10rem;
 }
 
 .container-cart img{
-    width: 9.375rem;
-    height: 12.5rem;
-    object-fit: cover;
+    max-width: 20%;
+    height: auto;
 
 }
 
-.container-cart div{
-    width: 100%;
+.detalles-productos-cart{
+    width: 80%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 
@@ -56,4 +57,47 @@
     height: 1.25rem;
     margin: 0;
     text-align: center;
+}
+
+.precio-eliminar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: .625rem;
+}
+
+.precio-eliminar button{
+    background-color: transparent;
+}
+
+.precio-eliminar button i{
+    font-size: 1.875rem;
+}
+
+.precio-eliminar div p{
+    margin: 0;
+}
+
+
+@media (max-width: 900px) {
+    .container-cart{
+        height: auto;
+        width: 90%;
+        gap: 1rem;
+        font-size: 1.125rem;
+    }
+    .container-cart img{
+        height: auto;
+    }
+    .precio-eliminar button i{
+
+        font-size: 1.5625rem;
+    }
+}
+
+@media (max-width: 600px){
+    .container-cart{
+        width: 100%;
+    }
 }
