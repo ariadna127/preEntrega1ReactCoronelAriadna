@@ -5,8 +5,24 @@
     min-height: 100vh;
 }
 
+.resumen-compra{
+    width: 40%;
+}
+
+.resumen-compra h2{
+    text-align: center;
+}
+
+.div-form-compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 40%;
+}
 .form-compra{
     color: rgb(107, 107, 107);
+    width: 100%;
 }
 .form-compra div{
     display: flex;
@@ -17,14 +33,13 @@
     height: 2.8125rem;
     border-radius: .625rem;
     border: 1px solid rgb(175, 173, 173);
-    width: 31.25rem;
 }
 
 .form-compra div button{
     height: 2.8125rem;
     border-radius: .625rem;
     border: none;
-    width: 31.25rem;
+
     margin: .9375rem 0 .9375rem 0;
     background-color:#e64a64 ;
     font-weight: 500;
@@ -57,4 +72,33 @@
     justify-content: space-between;
     font-size: 1.125rem;
     margin-top: .9375rem;
+}
+
+
+@media (max-width: 900px){
+    .checkout{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .resumen-compra, .div-form-compra{
+        width: 80%;
+    }
+
+    .img-checkout{
+        max-width: 20%;
+        height: min-content;
+    }
+
+    .total h4{
+        font-size:larger;
+    }
+}
+
+@media (max-width: 600px) {
+    .resumen-compra h2, .div-form-compra h2{
+        text-align: center;
+    }
 }

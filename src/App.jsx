@@ -9,6 +9,7 @@ import CartProvider from './components/Context/CartContext'
 import Cart from './components/Cart/Cart'
 import CheckOut from './components/CheckOut/CheckOut'
 import Footer from './components/Footer/Footer'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className='app'>
       <BrowserRouter>
+      <ScrollToTop/>
       <CartProvider>
       <NavBar/>
       <Routes>

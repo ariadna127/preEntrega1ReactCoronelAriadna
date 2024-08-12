@@ -102,7 +102,7 @@ const CheckOut = () => {
     };
     return (
         <div className='checkout'>
-            <div>
+            <div className='div-form-compra'>
                 <h2 className='h2-confirm'>Confirmación de compra</h2>
                 <form className='form-compra' action="" onSubmit={manejarFormulario}>
                     <div>
@@ -159,7 +159,7 @@ const CheckOut = () => {
 
                 </form>
             </div>
-            <div>
+            <div className='resumen-compra'>
                 <h2 className='h2-confirm'>Resumen de la compra</h2>
                 {cart.map((product) => (
                     <div className='resumen' key={product.id}>
