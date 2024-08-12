@@ -99,5 +99,12 @@
 @media (max-width: 600px){
     .container-cart{
         width: 100%;
+        padding:0 .625rem;
+
+        font-size: medium;
+    }
+
+    .precio-eliminar{
+        gap: 0;
     }
 }
